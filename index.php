@@ -20,120 +20,109 @@ include_once("/var/www/_templates/config/public/config-medicare.php");
 
 <body>
     <a href="https://cdn.sppoints.xyz/click" class="hidden" id="rtRef"></a>
-    <nav class="bg-red-500 p-3 mt-0 w-full">
+    <nav class="p-3 mt-0 w-full" style="background-color: #004aad">
         <div class="container mx-auto flex items-center justify-between align-middle md:px-48">
-            <div class="flex text-white font-extrabold">
-                <?php echo (($domainName == "Dental Benefit Finder") ? "Benefits For Seniors" : $domainName) ?>
-            </div>
         </div>
     </nav>
     <div id="mainContainer" class="mx-auto md:pt-4 pt-1 px-4 md:px-0 max-w-5xl text-center container">
-        <h1 class="font-black text-center break-normal text-base md:text-2xl mx-auto">
-            Older Americans on Medicare Could Receive Zero Cost ($0) Dental Coverage Usable At Their Current Dentist
-        </h1>
+    <h1 class="font-bold text-left break-normal text-2xl md:text-3xl mx-auto">
+      [STATE] Seniors: 2024 Medicare Advantage Plans Can Help You Save
+      Thousands In Additional Benefits. Check Your Eligibility Now
+    </h1>
         <img class="mx-auto my-2 w-full" src="<?php echo $cdnPath; ?>/assets/images/hero1.png" />
-        <p class="my-2 md:text-xl">
-            Americans 64 and Older On Medicare could qualify for Zero Cost ($0) Dental Coverage, but they don't know
-            that they are eligible. Older Americans are due for a relief from inflation but they don't know that it is
-            available. Please take your time to qualify through this form.
-        </p>
-        <p class="my-2 md:text-xl">
-            To see if you qualify, tap your age below.
-        </p>
-        <div>
-            <div id="display1" class="md:mt-8 mt-4">
-                <h3 class="font-bold text-center md:text-4xl text-3xl my-8">
-                    What is your age range?
-                </h3>
-                <div class="grid grid-cols-1  gap-6">
-
-                    <button id="btn-2" class="flex justify-center bg-green-500 hover:bg-green-500  tracking-wide text-white font-bold rounded-2xl md:w-3/4 w-1/2 mx-auto border-b-2 border-green-500 uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center">64
-                        - 75
-                    </button>
-                    <button id="btn-3" class="flex justify-center bg-green-500 hover:bg-green-500  tracking-wide text-white font-bold rounded-2xl md:w-3/4 w-1/2 mx-auto border-b-2 border-green-500 uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center">76
-                        and older
-                    </button>
-                </div>
-            </div>
-            <div id="display2" class="md:mt-8 mt-4 hidden">
-                <h3 class="font-bold text-center md:text-4xl text-3xl my-8">
-                    Are You On Medicare or Medicaid?
-                </h3>
-                <div class="grid grid-cols-1 gap-6">
-                    <button id="btn-yes" class="flex justify-center bg-green-500 hover:bg-green-500  tracking-wide text-white font-bold rounded-2xl md:w-3/4 w-1/2 mx-auto border-b-2 border-green-500 uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center cta_btn btn_2">
-
-                        Yes
-                    </button>
-                    <button id="btn-no" class="flex justify-center bg-green-500 hover:bg-green-500  tracking-wide text-white font-bold rounded-2xl md:w-3/4 w-1/2 mx-auto border-b-2 border-green-500 uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center cta_btn btn_2">
-                        No
-                    </button>
-                </div>
-            </div>
-            <div id="display3" class="md:mt-8 mt-4 hidden">
-                <h3 class="font-bold text-center md:text-4xl text-3xl my-8">
-                    Are you also interested in Zero Cost ($0) Vision Coverage?
-                </h3>
-                <div class="grid grid-cols-1 gap-6">
-                    <button id="btn-yes1" class="flex justify-center bg-green-500 hover:bg-green-500  tracking-wide text-white font-bold rounded-2xl md:w-3/4 w-1/2 mx-auto border-b-2 border-green-500 uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center cta_btn btn_2">
-
-                        Yes
-                    </button>
-                    <button id="btn-no1" class="flex justify-center bg-green-500 hover:bg-green-500  tracking-wide text-white font-bold rounded-2xl md:w-3/4 w-1/2 mx-auto border-b-2 border-green-500 uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center cta_btn btn_2">
-                        No
-                    </button>
-                </div>
-            </div>
-
-
+        <p class="my-2 md:text-xl" style="text-align: left">
+      Millions of Seniors are rushing the hotlines to secure their 2024
+      Medicare Advantage benefit.
+    </p>
+    <p class="my-2 md:text-xl" style="text-align: left">
+      <b> Benefit plans and options are always changing,</b> so speak to our
+      licensed sales agents and choose the right Medicare Advantage plan
+      before enrollment ends!
+    </p>
+    <br />
+    <p class="font-bold my-2 text-xl md:text-xl">Tap Your Age.</p>
+    <div>
+      <div id="display1" class="md:mt-8 mt-4">
+        <div class="grid grid-cols-1 gap-6">
+          <button id="btn-2"
+            class="flex justify-center bg-blue-500 hover:bg-blue-500 tracking-wide text-white font-bold rounded-2xl md:w-3/4 w-1/2 mx-auto border-b-4 border-blue-700 shadow-md md:py-6 py-4 md:text-2xl px-6 items-center">
+            65 to 74
+          </button>
+          <button id="btn-3"
+            class="flex justify-center bg-blue-500 hover:bg-blue-500 tracking-wide text-white font-bold rounded-2xl md:w-3/4 w-1/2 mx-auto border-b-4 border-blue-700 shadow-md md:py-6 py-4 md:text-2xl px-6 items-center">
+            Over 75
+          </button>
         </div>
+      </div>
+      <div id="display2" class="md:mt-8 mt-4 hidden">
+        <h3 class="font-bold text-center md:text-4xl text-3xl my-8">
+          Are You Enrolled In Medicare Part A Or Part B?
+        </h3>
+        <div class="grid grid-cols-1 gap-6">
+          <button id="btn-yes"
+            class="flex justify-center bg-[#41961D] hover:bg-[#41961D] tracking-wide text-white font-bold rounded-2xl md:w-3/4 w-1/2 mx-auto border-b-4 border-[#028039] uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center cta_btn btn_2">
+            Yes
+          </button>
+          <button id="btn-no"
+            class="flex justify-center bg-[#41961D] hover:bg-[#41961D] tracking-wide text-white font-bold rounded-2xl md:w-3/4 w-1/2 mx-auto border-b-4 border-[#028039] uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center cta_btn btn_2">
+            No
+          </button>
+        </div>
+      </div>
     </div>
-    <div id="display4" class="hidden hidden mx-auto md:pt-4 pt-1 px-4 md:px-0 max-w-5xl container ">
-        <div class="p-6 border-t-2 border-blue-500 mt-4 bg-gray-300 text-center shadow-xl">
-            <h3 class="text-xl md:text-2xl font-bold">
-                It looks like you may have pre-qualified. Your agent will confirm your information.
-            </h3>
-            <p class="mt-2 text-red-500 md:text-sm text-xs capitalize font-bold">Important: Mention To The Agent That
-                You Are Calling For The Zero Cost ($0) Dental and Vision Coverage
-            </p>
-            <a href="tel:<?php echo $ringbaNumberPrimaryTel; ?>">
-                <button class="capitalize font-bold  bg-green-500 animate__animated animate__pulse animate__infinite  text-white my-4 p-5  shadow-2xl md:text-2xl text-base">
+  </div>
+  <div id="display4" class="hidden hidden mx-auto md:pt-4 pt-1 px-4 md:px-0 max-w-5xl container">
+    <div class="p-6 mt-4 text-center>
+        <h3 class=" text-xl md:text-2xl font-bold text-[#41961D] mb-4">
+      Congratulations!
+      </h3>
+      <p class="mt-2 md:text-sm text-s capitalize font-bold">
+        You may be eligible for additional benefits and savings that may
+        include
+        <br />
+      </p>
+    </div>
+
+    <div class="p-6 justify-center tracking-wide w-7/12 mx-auto">
+      <div class="flex grid-cols-2 p-3">
+        <div class="flex w-fit mr-3 items-center">
+          <span class="rounded-full bg-green-400 text-white px-2.5 py-1 text-xl">&check;</span>
+        </div>
+        <p class="inline mt-2 md:text-sm text-s font-bold">Dental Hearing and vision Care</p>
+      </div>
+      <div class="flex grid-cols-2 p-3">
+        <div class="flex w-fit mr-3 items-center">
+          <span class="rounded-full bg-green-400 text-white px-2.5 py-1 text-xl">&check;</span>
+        </div>
+        <p class="inline mt-2 md:text-sm text-s font-bold">Groceries</p>
+      </div>
+      <div class="flex grid-cols-2 p-3">
+        <div class="flex w-fit mr-3 items-center">
+          <span class="rounded-full bg-green-400 text-white px-2.5 py-1 text-xl">&check;</span>
+        </div>
+        <p class="inline mt-2 md:text-sm text-s font-bold">Prescriptions</p>
+      </div>
+    </div>
+
+    <a href="tel:<?php echo $ringbaNumberPrimaryTel; ?>">
+                <button 
+                class="flex justify-center bg-[#41961D] hover:bg-[#41961D] tracking-wide text-white font-bold rounded-2xl md:w-3/4 w-1/2 mx-auto border-b-4 border-[#028039] uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center cta_btn btn_2">
                     Click to Call
                     <?php echo $ringbaNumberPrimary; ?>
                 </button>
             </a>
+            <p class="text-base my-4 mx-4 text-center">
+        <span class="bg-yellow-400 px-1 rounded-md">Make a <b>quick call</b> to our licensed sales</span>
+        <br />
+        <span class="bg-yellow-400 p-1 rounded-md">agents to learn more before enroll.</span>
+      </p>
 
-            <p class="text-base my-4 underline">Act Quickly. Your agent is only reserved for the next 3 minutes.</p>
-
-            <div id="countdown" class="border-2 border-red-500 border-dashed w-max px-6 py-2 mx-auto">
-                <span class="text-red-500" id="time"></span>
-            </div>
-        </div>
+    <div id="countdown" class="w-max mx-auto">
+      <span class="text-red-500 font-bold" id="time"></span>
     </div>
-
-    <footer class="footer mt-12 footer-center p-4 mt-12 mb-2 text-center max-w-6xl mx-auto text-xs">
-        <div>
-            <p>By clicking the above button and submitting this form, I agree that I am 18+ years old and I provide my signature expressly consenting to receive emails, calls, postal mail, text messages and other forms of marketing communication regarding Medicare and Health Insurance, or other offers from <?php echo $currentDomain; ?> and agents to the number(s) I provided, including a mobile phone, even if I am on a state or federal Do Not Call and/or Do Not Email registry. The list of companies participating are subject to change. I will receive calls and/or texts from multiple companies in the list and/or <?php echo $currentDomain; ?>. Such calls and text messages may use automated telephone dialing systems, artificial or pre-recorded voices. I understand my wireless carrier may impose charges for calls or texts. I understand that my consent to receive communications is not a condition of purchase and I may revoke my consent at any time. </p>
-        </div>
-        <div class="mb-4">
-            <p>
-                This information is for educational purposes only and not endorsed by
-                Facebook , Instagram YouTube or any news publication.
-            </p>
-        </div>
-        <div class="grid grid-flow-col gap-3 md:w-1/3 mx-auto my-8">
-            <a class="link link-hover" href="https://<?php echo $currentDomain; ?>/terms"> Terms & Conditions </a>
-            <p class="text-blue-500">|</p>
-            <a class="link link-hover" href="https://<?php echo $currentDomain; ?>/privacy"> Privacy Policy </a>
-
-            <p class="text-blue-500">|</p>
-            <a class="link link-hover" href="https://<?php echo $currentDomain; ?>/privacy.php#caresidents"> CCPA </a>
-        </div>
-        <div class="mt-8">
-            <p>Copyright © 2024 - All right reserved
-                <?php echo $domainName ?>
-            </p>
-        </div>
-    </footer>
+  </div>
+  </div>
+  <br /><br />
     <script src="https://cdn.sppoints.xyz/track.js?rtkcmpid=<?php echo $rtkCmpId; ?>"></script>
     <script>
         const setRtClickId = () => {
@@ -232,8 +221,9 @@ include_once("/var/www/_templates/config/public/config-medicare.php");
 
         btnYes.addEventListener("click", () => {
             display2.style.display = "none";
-            display3.style.display = "block";
-
+            mainContainer.style.display = "none";
+            display4.style.display = "block";
+            runCountdownTimer();
         })
 
         btnNo.addEventListener("click", () => {
